@@ -2,5 +2,5 @@ Rails.application.routes.draw do
   # this is app/controllers/application_controller.rb -- rails understands application to be application_controller.rb
   root 'pages#home'
   get 'about', to: 'pages#about'
-  resources :articles, only: [:show, :index]
+  resources :articles, only: [:show, :index, :new, :create, :edit, :update]
 end
